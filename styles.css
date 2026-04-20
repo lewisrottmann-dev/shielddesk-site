@@ -164,6 +164,25 @@ a:hover {
   padding-left: 22px;
 }
 
+.question-list {
+  color: var(--muted);
+  margin: 0 0 8px;
+  padding-left: 22px;
+}
+
+.template-block {
+  background: #0f172a;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 14px 0 0;
+  overflow-x: auto;
+  padding: 18px;
+  white-space: pre-wrap;
+}
+
 .callout {
   background: #ecfeff;
   border-color: #99f6e4;
