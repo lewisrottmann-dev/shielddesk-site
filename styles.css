@@ -108,6 +108,10 @@ a:hover {
   max-width: 720px;
 }
 
+.hero-actions {
+  margin-top: 28px;
+}
+
 .main {
   margin: 0 auto;
   max-width: 1040px;
@@ -186,6 +190,25 @@ a:hover {
 .callout {
   background: #ecfeff;
   border-color: #99f6e4;
+}
+
+.feature-list {
+  display: grid;
+  gap: 14px;
+}
+
+.feature-list div {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.feature-list strong {
+  color: var(--ink);
+  display: block;
+  font-size: 17px;
+  margin-bottom: 6px;
 }
 
 .button-row {
