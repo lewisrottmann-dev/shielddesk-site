@@ -210,6 +210,216 @@ a:hover {
   background: var(--teal);
 }
 
+.pricing-page {
+  background: #070b0c;
+}
+
+.pricing-header {
+  background: #070b0c;
+}
+
+.pricing-hero,
+.pricing-main {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.pricing-hero {
+  padding: 24px 20px 18px;
+}
+
+.hero-lockup {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.product-mark {
+  align-items: center;
+  background:
+    radial-gradient(circle at 50% 44%, #9ff7ee 0 18%, #15b8a6 19% 34%, #132238 35% 56%, #060a11 57%);
+  border: 1px solid #263c4c;
+  border-radius: 14px;
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.34);
+  color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 1px;
+  height: 58px;
+  justify-content: center;
+  overflow: hidden;
+  width: 58px;
+}
+
+.product-mark::after {
+  color: #e7fffb;
+  content: "SD";
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.small-mark {
+  border-radius: 12px;
+  height: 54px;
+  width: 54px;
+}
+
+.danger-label {
+  color: #ff5b63;
+}
+
+.pricing-hero h1 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.05;
+  margin: 6px 0 0;
+}
+
+.pricing-main {
+  display: grid;
+  gap: 28px;
+  padding: 0 20px 56px;
+}
+
+.pricing-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pricing-card,
+.pricing-table-card {
+  background: #171d1f;
+  border: 1px solid #174333;
+  border-radius: 8px;
+  color: #f8fafc;
+}
+
+.pricing-card {
+  display: grid;
+  gap: 16px;
+  min-height: 392px;
+  padding: 24px;
+}
+
+.pricing-card.featured {
+  border-color: #ff5b63;
+}
+
+.tier-label {
+  color: #ff5b63;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pricing-card h2 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.tier-price {
+  color: #ff5b63;
+  display: block;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.pricing-card p,
+.pricing-card li,
+.pricing-table td {
+  color: #b7c0c4;
+}
+
+.pricing-card p {
+  margin: 2px 0 8px;
+}
+
+.pricing-card ul {
+  display: grid;
+  gap: 10px;
+  margin: auto 0 0;
+  padding: 0;
+}
+
+.pricing-card li {
+  list-style: none;
+  padding-left: 18px;
+  position: relative;
+}
+
+.pricing-card li::before {
+  background: #3ee184;
+  border-radius: 999px;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  top: 0.68em;
+  width: 7px;
+}
+
+.pricing-card a {
+  align-self: end;
+  border-bottom: 1px solid #35d27f;
+  color: #4eff94;
+  padding-bottom: 3px;
+  width: fit-content;
+}
+
+.pricing-table-card {
+  display: grid;
+  gap: 24px;
+  padding: 22px;
+}
+
+.compact-lockup h2 {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.28;
+  margin: 6px 0 0;
+}
+
+.pricing-table-wrap {
+  overflow-x: auto;
+}
+
+.pricing-table {
+  border-collapse: collapse;
+  min-width: 980px;
+  width: 100%;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border-top: 1px solid #2a3336;
+  padding: 16px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.pricing-table thead th {
+  border-top: 0;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pricing-table tbody th {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.pricing-table td:nth-child(2) {
+  color: #ff686f;
+  font-weight: 900;
+}
+
 .footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -218,9 +428,26 @@ a:hover {
   padding: 24px 20px 40px;
 }
 
+.pricing-footer {
+  background: #070b0c;
+  border-top-color: #174333;
+  max-width: none;
+}
+
+.pricing-footer p {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .small {
   color: #64748b;
   font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
@@ -243,5 +470,25 @@ a:hover {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-hero h1 {
+    font-size: 34px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    min-height: 0;
+  }
+
+  .hero-lockup {
+    align-items: flex-start;
+  }
+
+  .tier-price {
+    font-size: 25px;
   }
 }
