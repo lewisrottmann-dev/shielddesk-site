@@ -14,3 +14,4 @@ Public support and privacy pages for ShieldDesk.
 - `support.html` - user support and contact page
 - `feedback.html` - TestFlight beta feedback checklist and email template
 - `privacy.html` - privacy policy for App Store Connect
+- `privacy.md` - Markdown source copy of the privacy policy
