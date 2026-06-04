@@ -30,4 +30,4 @@ Kairnex ShieldDesk does not sell user data. Data is shared only when the user ch
 
 ## Contact
 
-For privacy questions, contact: lewisrottmann@gmail.com
+For privacy questions, contact: lewis.rottmann@kairneximpact.ltd
